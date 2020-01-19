@@ -1,16 +1,102 @@
 fileFormatVersion: 2
-guid: d82fd2124fad50644a4846ff3829298a
+guid: b81e7e0fc0cfafa40871888c3003f3d7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Armature
+    100002: Bone.014
+    100004: Bone.014_end
+    100006: character
+    100008: Chest
+    100010: Elbowpoint.L
+    100012: Elbowpoint.L_end
+    100014: Elbowpoint.R
+    100016: Elbowpoint.R_end
+    100018: Fist.L
+    100020: Fist.L_end
+    100022: Fist.R
+    100024: Fist.R_end
+    100026: Fistcontrol.L
+    100028: Fistcontrol.L_end
+    100030: Fistcontrol.R
+    100032: Fistcontrol.R_end
+    100034: Foot.L
+    100036: Foot.L_end
+    100038: Foot.R
+    100040: Foot.R_end
+    100042: Footcontrol.L
+    100044: Footcontrol.R
+    100046: Head
+    100048: Head_end
+    100050: Hips
+    100052: Hipscontrol
+    100054: Kneepoint.L
+    100056: Kneepoint.L_end
+    100058: Kneepoint.R
+    100060: Kneepoint.R_end
+    100062: //RootNode
+    100064: Lowerarm.L
+    100066: Lowerarm.R
+    100068: Lowerleg.L
+    100070: Lowerleg.R
+    100072: Main control bone.
+    100074: Neck
+    100076: Shoulder.L
+    100078: Shoulder.R
+    100080: Upperarm.L
+    100082: Upperarm.R
+    100084: Upperleg.L
+    100086: Upperleg.R
+    100088: waist
+    400000: Armature
+    400002: Bone.014
+    400004: Bone.014_end
+    400006: character
+    400008: Chest
+    400010: Elbowpoint.L
+    400012: Elbowpoint.L_end
+    400014: Elbowpoint.R
+    400016: Elbowpoint.R_end
+    400018: Fist.L
+    400020: Fist.L_end
+    400022: Fist.R
+    400024: Fist.R_end
+    400026: Fistcontrol.L
+    400028: Fistcontrol.L_end
+    400030: Fistcontrol.R
+    400032: Fistcontrol.R_end
+    400034: Foot.L
+    400036: Foot.L_end
+    400038: Foot.R
+    400040: Foot.R_end
+    400042: Footcontrol.L
+    400044: Footcontrol.R
+    400046: Head
+    400048: Head_end
+    400050: Hips
+    400052: Hipscontrol
+    400054: Kneepoint.L
+    400056: Kneepoint.L_end
+    400058: Kneepoint.R
+    400060: Kneepoint.R_end
+    400062: //RootNode
+    400064: Lowerarm.L
+    400066: Lowerarm.R
+    400068: Lowerleg.L
+    400070: Lowerleg.R
+    400072: Main control bone.
+    400074: Neck
+    400076: Shoulder.L
+    400078: Shoulder.R
+    400080: Upperarm.L
+    400082: Upperarm.R
+    400084: Upperleg.L
+    400086: Upperleg.R
+    400088: waist
     2100000: color
-    2300000: //RootNode
-    3300000: //RootNode
     4300000: character
-    7400000: character|characterAction
     9500000: //RootNode
+    13700000: character
   externalObjects: {}
   materials:
     importMaterials: 1
