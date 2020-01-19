@@ -2,9 +2,11 @@
 
 
 public class ItemPickup : Interactable
-{   
+{
 
-    public new GameObject name;    
+    public new GameObject name;
+
+    public Transform hand;
 
     public override void Interact()
     {
@@ -17,7 +19,10 @@ public class ItemPickup : Interactable
     {
         Debug.Log("picking up item");
 
-        Destroy(name);
-        
+        if (name != null)
+        {
+            Destroy(name);
+            Instantiate(name, hand.position, hand.rotation);
+        }
     }
 }
