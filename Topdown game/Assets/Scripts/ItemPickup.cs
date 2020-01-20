@@ -23,6 +23,7 @@ public class ItemPickup : Interactable
         {
             Destroy(name);
             Instantiate(name, hand.position, hand.rotation);
+            name.transform.parent = hand.transform;
         }
     }
 }
