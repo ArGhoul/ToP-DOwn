@@ -226,11 +226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: b81e7e0fc0cfafa40871888c3003f3d7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.46
+      value: 0.029999971
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: b81e7e0fc0cfafa40871888c3003f3d7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: b81e7e0fc0cfafa40871888c3003f3d7, type: 3}
       propertyPath: m_LocalRotation.y
@@ -238,7 +238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: b81e7e0fc0cfafa40871888c3003f3d7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: b81e7e0fc0cfafa40871888c3003f3d7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -683,9 +683,10 @@ GameObject:
   - component: {fileID: 1936324185}
   - component: {fileID: 1936324190}
   - component: {fileID: 1936324189}
+  - component: {fileID: 1936324191}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -750,7 +751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936324184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.6, z: -1.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 145998906}
@@ -785,6 +786,19 @@ MonoBehaviour:
   movementMask:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &1936324191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936324184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ad692cbd5e879459573bfc1b98bce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1936324184}
 --- !u!1001 &2039064647
 PrefabInstance:
   m_ObjectHideFlags: 0
