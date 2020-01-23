@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
+    public PlayerMotor movement;
 
     public Interactable focus;
 
@@ -36,23 +37,7 @@ public class PlayerController : MonoBehaviour
                 RemoveFocus();
             }
             
-        }
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100))
-            {
-                Interactable interactable = hit.collider.GetComponent<Interactable>();
-                if (interactable != null)
-                {
-                    SetFocus(interactable);
-                }
-            }
-
-        }
-
+        }      
     }
 
     void SetFocus (Interactable newFocus)
@@ -76,6 +61,14 @@ public class PlayerController : MonoBehaviour
 
         focus = null;
         motor.StopFollowingTarget();
+    }
+
+    void OnCollisionEnter(Collision collisioninfo)
+    {
+        if (collisioninfo.collider.tag == "Enemy")
+        {
+            movement.enabled = false;
+        }
     }
 
 }

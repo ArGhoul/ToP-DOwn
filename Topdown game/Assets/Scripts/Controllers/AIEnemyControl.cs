@@ -5,8 +5,7 @@ using UnityEngine.AI;
 
 public class AIEnemyControl : MonoBehaviour
 {
-
-    public float lookRadius = 10f;
+    public float lookRadius = 10f;    
 
     Transform target;
     NavMeshAgent agent;
@@ -21,7 +20,12 @@ public class AIEnemyControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        float distance = Vector3.Distance(target.position, transform.position);
+
+        if (distance<= lookRadius)
+        {
+            agent.SetDestination(target.position);
+        }
     }
 
     void OnDrawGizmosSelected()
@@ -29,4 +33,6 @@ public class AIEnemyControl : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
+
+
 }
